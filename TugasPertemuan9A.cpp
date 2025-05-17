@@ -4,8 +4,8 @@ using namespace std;
 
 class Mahasiswa {
 private:
-    std::string nama;
-    std::string NIM;
+    string nama;
+    string NIM;
     float nilai;
 
 public:
@@ -20,9 +20,9 @@ void beriNilai(Mahasiswa* m, float n) {
 
 class Dosen {
 private:
-    std::string nama;
-    std::string NIDN;
-    std::string pangkat;
+    string nama;
+    string NIDN;
+    string pangkat;
     float gaji;
 
 public:
@@ -38,8 +38,8 @@ void ubahPangkat(Dosen* d, std::string pangkatBaru) {
 
 class Staff {
 private:
-    std::string nama;
-    std::string IDstaff;
+    string nama;
+    string IDstaff;
     float gaji;
 
 public:
@@ -49,13 +49,13 @@ public:
 };
 
 void lihatGajiStaff(Staff* s) {
-    std::cout << "Gaji Staff " << s->nama << ": " << s->gaji << std::endl;
+    cout << "Gaji Staff " << s->nama << ": " << s->gaji << std::endl;
 }
 
 class Universitas {
 public:
     void aksesGajiDosen(Dosen* d) {
-        std::cout << "Gaji Dosen " << d->nama << ": " << d->gaji << std::endl;
+        cout << "Gaji Dosen " << d->nama << ": " << d->gaji << std::endl;
     }
 };
 
